@@ -20,6 +20,9 @@
             <div class="menu_container">
                 <ul class="menu_items">
                     <li class="menu_item">
+                        <a href="/" class="item_links">home</a>
+                    </li>
+                    <li class="menu_item">
                         <a href="/about" class="item_links">about</a>
                     </li>
                     <li class="menu_item">
@@ -40,10 +43,33 @@
     </header>
     <main>
         <section id="jumbotron">
-            <h1 class="j_heading">
-                comming soon
-            </h1>
-            <a href="/" class="j_link">back to the home page</a>
+            <div class="contact_header">
+                <h1 class="c_heading">Contact</h1>
+            </div>
+            <form action="https://theprince.co.za" method="POST" class="contact_form">
+                <div class="form_items">
+                    <label for="name" class="form_item_label">Name:</label>
+                    <input type="text" name="name" id="name" class="form_item_input" placeholder="Enter your full name" required>
+                </div>
+                <div class="form_items">
+                    <label for="email" class="form_item_label">Email:</label>
+                    <input type="text" name="email" id="emai" placeholder="Enter your email" class="form_item_input" required>
+                </div>
+                <div class="form_items">
+                    <label for="phone" class="form_item_label">Phone:</label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter your phone number" class="form_item_input">
+                </div>
+                <div class="form_items">
+                    <label for="message" class="form_item_label">Message:</label>
+                    <textarea name="message" id="message" placeholder="Please type your message here!" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form_items">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+            <div class="info">
+                this page is being developped so it will come soon!
+            </div>
         </section>
     </main>
 </body>

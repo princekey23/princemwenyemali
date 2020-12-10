@@ -1,5 +1,160 @@
-/*********************** import Roboto font from google apis ***************************/
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 /************* default styling for everything****************/
+
+* {
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.header {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+.top_section {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.top_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: none;
+}
+.topLink{
+    margin:0;
+    padding:0;
+}
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0,0,0,.4);
+    padding: 0;
+    margin: 0;
+    position: relative;
+    line-height: 50px;
+}
+/******* logo *******/
+
+.name_link {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+    transition: transfom 250ms ease-in-out;
+    padding: 0 .3em;
+    float: left;
+    position: relative;
+    z-index: 99;
+    cursor: pointer;
+}
+.name_link:hover,
+.item_links:hover {
+    text-decoration: underline;
+    opacity: .7;
+}
+
+/********** menu button ********/
+
+#menu_button {
+    position: relative;
+    z-index: 99;
+    padding: 1.5em 1em;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+.menu_hamburger {
+    position: relative;
+}
+.menu_hamburger,
+.menu_hamburger:before,
+.menu_hamburger:after {
+    display: block;
+    width: 20px;
+    height: 2px;
+    content: '';
+    background-color: #fff;
+}
+.menu_hamburger:before{
+    position: absolute;
+    top: 7px;
+}
+.menu_hamburger:after {
+    position: absolute;
+    top: -7px;
+}
+
+/******** menu *********/
+
+.menu_container {
+    display: none;
+}
+.menu_items {
+    list-style: none;
+    margin: 0;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.menu_item {
+    margin: 0 .5em;
+    padding: 0;
+}
+.item_links {
+    color: #fff;
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+}
+.item_links_btn {
+     color: #fff;
+    display: block;
+    width: 80%;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 900;
+    text-decoration: none;
+    padding: .5rem;
+    background-color: #0000FE;
+    margin: 0 auto;
+    border-radius: .5em;
+    border: 1px solid #fff;
+    transition: all 250ms ease-in-out;
+}
+.item_links_btn:hover {
+    background-color: #0a0a6b;
+    border: 1px solid #0a0a6b;
+}
+
+/*********** open when button clicked *****/
+
+.nav_open .menu_container {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}

@@ -231,3 +231,20 @@ html {
   padding: 0 .5em;
   text-align: center;
 }
+.j_heading .J_link {
+   color: #fff;
+   text-decoration: none;
+   transition: .6s ease-in-out;
+}
+.j_heading .J_link:hover {
+   text-decoration: underline;
+   opacity: 0.6;
+}
+.j_text {
+  width: 100%;
+  padding: 0 1em;
+  color: #fff;
+  opacity: .7;
+  font-size: 24px;
+  font-weight: 900;
+}

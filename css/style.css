@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    overflowX : none;
 }
 html {
     scroll-behavior: smooth;
@@ -213,7 +214,7 @@ html {
  height: 100%;
  position: absolute;
  top: 0 ;
- background-color: rgba(0,0,0,.4);
+ background-color: rgba(0,0,0,.6);
 }
 .j_details {
  width: 100%;
@@ -247,4 +248,235 @@ html {
   opacity: .7;
   font-size: 24px;
   font-weight: 900;
+  text-align: center;
+}
+.j_small_container {
+  width: 100%;
+  text-align: center;
+  padding: .5em;
+}
+.j_small_container small {
+  font-size: 18px;
+  color: rgb(120,120,120);
+  background-color: rgba(0,0,155,.1);
+  font-size: 800;
+  padding: 0.5em 1em;
+  border-radius: .2em;
+}
+.j_btnLink_container {
+  width: 100%;
+  padding: .5rem 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.j_link {
+   padding: 1rem 2rem;
+   border: 1px solid #fff;
+   border-radius: .4em;
+   color: #fff;
+   background-color: #0000FE;
+   transition: all 250ms ease-in-out;
+   font-size: 24px;
+   text-decoration: none;
+   font-transform: capitalize;
+}
+.j_link:hover  {
+ background-color: #0a0a6b;
+}
+
+/******** work section *********/
+
+#works {
+ width: 100vw;
+ margin: 0;
+ padding: 0 .5em;
+ background-color: #000000;
+ position: relative;
+}
+.work_heading {
+  font-size: 40px;
+  color: #fff;
+  opacity: .8;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1em 0;
+  margin: 0;
+}
+.work {
+   width: 100%;
+   padding: 0;
+   margin: 0;
+}
+.plumbing {
+  width: 100%;
+  padding:0 0 1em 0;
+  margin:0;
+}
+.p_header {
+  text-align: center;
+  font-weight: 800;
+  color: #fff;
+  font-size: 24px;
+  opacity: .7;
+  text-transform: uppercase;
+}
+.p_details_container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+.p-img_container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.p_img {
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+.p_details {
+  width: 100%;
+  color: #fff;
+  opacity: .6;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: .5em;
+}
+.p_button_container {
+  margin: 1em 0;
+  width: 100%;
+  padding: 0;
+}
+.p_button {
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: capitalize;
+  padding: 1em 2em;
+  border: 1px solid #fff;
+  background-color: #0000FE;
+  border-radius: .3em;
+  text-decoration: none;
+}
+.p_button:hover {
+  background: #0A0A6B;
+}
+
+/********* travel section ***********/
+
+#voyage {
+  width: 100vw;
+  margin:0;
+  padding:0;
+  position: relative;
+  top: 0;
+  background: #fff;
+  padding: 1em 0 2em 0;
+}
+
+.v_header {
+  font-size: 40px;
+  color: #00000;
+  text-transform: uppercase;
+  text-align: center;
+  padding: .5em 0;
+  position: relative;
+}
+.V_details_container {
+  width: 100%;
+  margin: 0 aut0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+.v_drc {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+  margin: .5em 0;
+  border-radius: .5em;
+  align-self: center;
+}
+.d_heading {
+  width: 100%;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+.V_details_container picture img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  border-radius: .3em;
+}
+.V_details_container picture h5 {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: rgba(0,0,0,.6);
+}
+.d_details {
+  font-size: 16px;
+  color: rgba(0,0,0,.6);
+}
+.rwanda_burundi {
+  margin; 0;
+  padding: 0;
+  padding: .5em 0;
+}
+.rwanda_burundi_body {
+  margin; 0;
+  padding: 0;
+ }
+ .rb_header {
+   color: rgba(0,0,0,.7);
+   font-size: 18px;
+   text-transform: uppercase;
+ }
+
+/*********** photos section ***********/
+
+#photo_section {
+   width: 100vw;
+   margin: 0;
+   padding: 0;
+   background-color: rgb(0,0,0);
+   position: relative;
+   top: 0;
+   padding: 1em 0 2em;
+}
+.p_header {
+   width: 100%;
+   padding: 0;
+   margin: 0;
+   font-size: 40px;
+   font-weight: 900;
+   color: #fff;
+}
+.photo_body {
+   width: 100%;
+   margin: 0;
+   padding: 0 1em;
+   text-align: center;
+}
+.p_image {
+   width: 100%;
+   margin:.5em 0;
+   padding: 0;
+   object-fit: cover;
+   border-radius: .3em;
+}
+.p_button_container {
+   width: 100%;
+   padding: 1em 0;
+   text-align: center;
 }

@@ -57,7 +57,7 @@ html {
     padding: 0 .3em;
     float: left;
     position: relative;
-    z-index: 99;
+    z-index:1;
     cursor: pointer;
 }
 .name_link:hover,
@@ -70,11 +70,12 @@ html {
 
 #menu_button {
     position: relative;
-    z-index: 99;
+    z-index:1;
     padding: 1.5em 1em;
     outline: none;
     background-color: transparent;
     border: none;
+    cursor: pointer;
 }
 .menu_hamburger {
     position: relative;
@@ -87,6 +88,7 @@ html {
     height: 2px;
     content: '';
     background-color: #fff;
+    transition: all 250ms ease-in-out;
 }
 .menu_hamburger:before{
     position: absolute;
@@ -147,6 +149,26 @@ html {
 
 /*********** open when button clicked *****/
 
+.nav-Open #menu_button {
+   cursor: pointer;
+   z-index: 99;
+}
+.nav-Open .name_link {
+   z-index:99;
+}
+.nav-Open .menu_hamburger {
+   background:transparent;
+}
+.nav-Open .menu_hamburger:before {
+   transform: rotate(45deg);
+   top:0;
+   background-color: rgb(100,0,0);
+}
+.nav-Open .menu_hamburger:after {
+    transform: rotate(-45deg);
+    top:0;
+    background-color: rgb(100,0,0);
+}
 .nav-Open .menu_container{
     display: flex;
     align-items: center;
@@ -158,4 +180,54 @@ html {
     height:100vh;
     position: absolute;
     top:0;
+    z-index:1;
+}
+
+
+/************jumbotron styling ********/
+
+#jumbotron {
+   width: 100vw;
+   height:100vh;
+   position: relative;
+   top: 0;
+   margin:0;
+   padding:0;
+}
+.j_container {
+   width: 100%;
+   height:100%;
+   margin:0;
+   padding:0;
+   position: fixed;
+   top:0;
+   z-index: -1;
+}
+.j_image {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.j_detail_container {
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0 ;
+ background-color: rgba(0,0,0,.4);
+}
+.j_details {
+ width: 100%;
+ height:80%;
+ display: flex;
+ flex-direction: column;
+ align-items:center;
+ justify-content: center;
+}
+.j_heading {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 900;
+  width: 100%;
+  padding: 0 .5em;
+  text-align: center;
 }

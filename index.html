@@ -1,333 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prince Mwenyemali</title>
-    <!--------------- font awesome cdn ------->
-
-    <script src="https://kit.fontawesome.com/c5b8d9c167.js" crossorigin="anonymous"></script>
-
-    <!------------ local library links --------->
-    <link rel="icon" href="./gallery/images/logo.png" type="img/gif">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <header class="header">
-        <section class="top_section">
-            <a href="https://elated-babbage-dbb3ab.netlify.app/" class="topLink" target="_blank"><img src="gallery/images/to-logo.jpg" alt="" class="top_image"></a>
-        </section>
-        <nav class="navbar">
-            <a href="/" class="name_link">
-                Prince M. Key
-            </a>
-            <button id="menu_button">
-                <span class="menu_hamburger"></span>
-            </button>
-            <div class="menu_container">
-                <ul class="menu_items">
-
-                    <li class="menu_item">
-                        <a href="/about" class="item_links">about</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="/portfolio" class="item_links">portfolio</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="/works" class="item_links">works</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="/hobbies" class="item_links">hobbies</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="/gallery" class="item_links">Gallery</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="#more" class="item_links">more</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="/contact" class="item_links_btn">contact</a>
-                    </li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prince Mwenyemali</title>
+        <!--------------- font awesome cdn ------->
+    
+        <script src="https://kit.fontawesome.com/c5b8d9c167.js" crossorigin="anonymous"></script>
+    
+        <!------------ local library links --------->
+        <link rel="icon" href="./gallery/images/logo.png" type="img/gif">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <section id="top-section">
+                <div class="l_container">
+                    <a href="/" class="logo">Prince <br>Mwenyemali</a>
+                </div>
+                <div class="r_container">
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fas fa-language"></i></button>
+                        <div class="dropdown-content">
+                          <a href="fr">fran&ccedil;ais</a>
+                          <a href="sw">swahili</a>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button id="menu_icon"><span class="hamburder"></span></button>
+                    </div>
+                </div>
+            </section>
+            <nav class="navbar">
+                <ul class="nav_items">
+                    <li class="nav_item"><a href="/about/" class="nav_link">about</a></li>
+                    <li class="nav_item"><a href="/Portfolio/" class="nav_link">portfolio</a></li>
+                    <li class="nav_item"><a href="/works" class="nav_link">my works</a></li>
+                    <li class="nav_item"><a href="/contact/" class="nav_link">contact</a></li>
+                    <li class="nav_item"><a href="/hobbies/" class="nav_link">hobbies</a></li>
+                    <li class="nav_item"><a href="/gallery/" class="nav_link">gallery</a></li>
                 </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section id="jumbotron">
-            <div class="j_detail_container">
-                <div class="j_details">
-                    <h1 class="j_heading">
-                        Hi, My Name is
-                        <a href="https://www.facebook.com/Prince-mwenyemali-103904881340573" class="J_link">
-                            Prince M. Key
-                        </a>
-                    </h1>
-                    <div class="j_text">
-                        I am a Front-End Web Developer, I am proficient in HTML, CSS, and JAVASCRIPT. I am most familiar with the BOOTSTRAP & JQUERY libraries.
-                    </div>
-                    <div class="j_small_container">
-                        <small>
-                            if you have any project just click bellow
-                        </small>
-                    </div>
-                    <br>
-                    <div class="j_btnLink_container">
-                        <a href="#works" class="j_link">For More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="j_container">
-                <img src="./gallery/images/code.jpg" alt="" class="j_image">
-            </div>
-        </section>
-        <section id="works">
-            <h1 class="work_heading">What I do</h1>
-            <div class="work">
-                <div class="plumbing">
-                    <h3 class="p_header">
-                        plumbing
-                    </h3>
-                    <div class="p_details_container">
-                        <div class="p-img_container">
-                            <img src="./gallery/images/seapoint.jpg" alt="" class="p_img">
-                        </div>
-                        <div class="p_details">
-                            I am an Apprentice Plumber who's currently working full time. So if you would consider to contribute in my learning process, please fell free to chat.
-                        </div>
-                        <br><br>
-                        <div class="p_button_container">
-                            <a href="/contact" class="p_button">let talk</a>
-                        </div>
-                    </div>
-                    <div class="plumbing">
-                        <h3 class="p_header">
-                            merchandising
-                        </h3>
-                        <div class="p_details_container">
-                            <div class="p-img_container">
-                                <img src="./gallery/images/pnp.jpg" alt="" class="p_img">
-                            </div>
-                            <div class="p_details">
-                                I am also a qualified Retail Merchandise and General worker. I work in different department in the Retail Industry
-                            </div>
-                            <br><br>
-                            <div class="p_button_container">
-                                <a href="/portfolio" class="p_button">more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="plumbing">
-                        <h3 class="p_header">
-                            coding
-                        </h3>
-                        <div class="p_details_container">
-                            <div class="p-img_container">
-                                <img src="./gallery/images/coding.jpg" alt="" class="p_img">
-                            </div>
-                            <div class="p_details">
-                                I am a self thought wWeb designer. I design simple static and small dynamic website. If you are keen to offer me a work to design a website like this one, You are more than welcome
-                            </div>
-                            <br><br>
-                            <div class="p_button_container">
-                                <a href="/contact" class="p_button">Let chat</a>
-                            </div>
-                        </div>
-                        <div class="plumbing">
-                            <h3 class="p_header">
-                                translation
-                            </h3>
-                            <div class="p_details_container">
-                                <div class="p-img_container">
-                                    <img src="./gallery/images/lang.jpg" alt="" class="p_img">
-                                </div>
-                                <div class="p_details">
-                                    I speak more than two languages. I speak English and French fluently. I was born in a country where people speaks many different languages so I know other languages like Swahili, Kiganda and so on.
-                                </div>
-                                <br><br>
-                                <div class="p_button_container">
-                                    <a href="/portfolio" class="p_button">more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="voyage">
-            <h1 class="v_header">
-                my journey
-            </h1>
-            <div class="V_details_container">
-                <div class="v_drc">
-                    <h3 class="d_heading">
-                        DRC
-                    </h3>
-                    <picture>
-                        <img src="./gallery/images/bk.jpg" alt="">
-                        <h5> Bukavu DRC</h5>
-                    </picture>
-                    <div class="d_details">
-                        Being born and raised in the Democratic Republic of Congo isn't easy at all. We try to survive in any mean but our Country still pushing us back through hardship. Corruption has devastated the economy of our country at the level where 80% of the youth
-                        remain unemployed. The country is rich in mineral resources but the population is poor. As a citizen I tried to hustle around the Country with no success so I moved from my hometown of Bukavu to Uvira, from Uvira it was still the
-                        same so I moved to Lubumbashi until I decided to head to South Africa.
-                    </div>
-                </div>
-                <div class="v_drc">
-                    <h3 class="d_heading">
-                        Uganda
-                    </h3>
-                    <picture>
-                        <img src="./gallery/images/kampala.jpg" alt="">
-                        <h5>kampala CBD</h5>
-                    </picture>
-                    <div class="d_details">
-                        Uganda is wonderful place to live, But as it said that in every african nation, the major problem is access to employment. I guess that's true because even the Country that us in Congo consider richer than us are facing some common challenges as those
-                        in Congo. Beside that I learnt to better use English vocabulary in Uganda so that's what helped me to survive in Kenya when I left Uganda.
-                    </div>
-                </div>
-                <div class="v_drc">
-                    <h3 class="d_heading">
-                        Kenya
-                    </h3>
-                    <picture>
-                        <img src="./gallery/images/nairobi.jpg" alt="">
-                        <h5>Nairobi CBD</h5>
-                    </picture>
-                    <div class="d_details">
-                        Wow, I am so excited to talk about Kenya. From all countries i've been to, Kenya still attract me. I love Mombasa. People are very generous even if they were advising me not to trust them. Kenya is a country that trying it's best to help citizens and
-                        the riches love the Country. So Kenya is far better than all East African countries including DRC. Kenyan motivated me and gave courage to work hard because they showed me that PHD doesn't get you a job in Africa but your thinking
-                        capacity is what help you but you need to work hard. So kenyan are the most creative people from all the African countries that I've travelled to. Thank you Kenya for giving me confidence and focus on what I want to do.
-                    </div>
-                </div>
-                <div class="v_drc">
-                    <h3 class="d_heading">
-                        Zambia
-                    </h3>
-                    <picture>
-                        <img src="./gallery/images/lusaka1.jpg" alt="">
-                        <h5>Lusaka CBD</h5>
-                    </picture>
-                    <div class="d_details">
-                        Zambia is another Country where people willing to help strangers even if they are poor. Zambian are generous but they are addicted to drink. You find a lot of people drunk early morning and that's what upset me. beside that Zambia is a place to make money
-                        if you are a hard worker. For physical works, you won't struggle is Zambia.
-                    </div>
-                </div>
-                <div class="v_drc">
-                    <h3 class="d_heading">
-                        Tanzania
-                    </h3>
-                    <picture>
-                        <img src="./gallery/images/dar.jpg" alt="">
-                        <h5>Dar es salam CBD</h5>
-                    </picture>
-                    <div class="d_details">
-                        Tanzania is my choice. Living in Tanzania was the best period of my ife. And I enjoyed the way people interact each other. wow, nice beaches (not maintained as in South Africa but they are beautiful), so there is a lot to explore and a lot to learn about
-                        the tanzanian society.
-                    </div>
-                </div>
-                <div class="v_drc">
-                    <h3 class="d_heading">
-                        South Africa
-                    </h3>
-                    <picture>
-                        <img src="./gallery/images/ct.jpg" alt="">
-                        <h5>Cape Town CBD</h5>
-                    </picture>
-                    <div class="d_details">
-                        South Africa is the richest and the most developed african country. It is by far the industrial power house of Africa. Beside being rich, South Africa have beautiful and generous people. Even the picture of SA in other african Countries and all over
-                        the world, was painted to be the most xenophobic country but South Africa is beyond that. People in South Africa are very tolerant and patient. So even if some of them a violent but still a big percentage of South African are against
-                        those xenophobic acts that circulate around the country sometimes. So don't be afraid because you will never see the beauty of this country in other african countries.
-                    </div>
-                </div>
-                <div class="v_drc">
-                    <h3 class="d_heading">
-                        Rwanda, Burundi
-                    </h3>
-                    <picture>
-                        <img src="./gallery/images/kigali.jpg" alt="">
-                        <h5>Kigali CBD</h5>
-                    </picture>
-                    <div class="d_details">
-                        <div class="rwanda_burundi">
-                            <div class="rwanda_burundi_body">
-                                <h4 class="rb_header">Rwanda</h4>
-                                <div class="rb_body">
-                                    Rwanda is beautiful Country but as I grew up visiting it, I saw nothing special than what is in my Country. So Rwanda is the safest country from all the countries I visited. No pick pocketing or gangsterism. So it's by far th country that almost every one
-                                    respect the law. Rwanda is beautiful!
-                                </div>
-                            </div>
-                            <div class="rwanda_burundi_body">
-                                <h4 class="rb_header">Burundi</h4>
-                                <div class="rb_body">
-                                    Being one of the poorest countries in the world, doesn't stop Burundi from showing and sharing its natural beauty with foreigners and visitors. Being in Burundi makes you feel at home away from home. so Burundi is tourist friendly almost like kenya and
-                                    tanzanania.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="photo_section">
-            <h1 class="p_header">
-                my photos
-            </h1>
-            <div class="photo_body">
-                <img src="./gallery/images/about_life.jpg" alt="" class="p_image">
-                <img src="./gallery/images/back.jpg" alt="" class="p_image">
-                <img src="./gallery/images/code.jpg" alt="" class="p_image">
-                <img src="./gallery/images/seapoint.jpg" alt="" class="p_image">
-            </div>
-            <br>
-            <div class="p_button_container">
-                <a href="/gallery" class="p_button">more</a>
-            </div>
-        </section>
-        <section id="more">
-            <h1 class="m_header">Check out my art of creation</h1>
-        </section>
-    </main>
-    <footer class="footer">
-        <section class="social_icon_container">
-            <ul class="icons">
-                <li class="icon">
-                    <a href="https://www.facebook.com/Prince-mwenyemali-103904881340573/" class="icon_link"><i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li class="icon">
-                     <a href="https://twitter.com/princemmalikey" class="icon_link">
-                         <i class="fab fa-twitter"></i>
-                     </a>
-                </li>
-                <li class="icon">
-                    <a href="https://za.linkedin.com/in/prince-mwenyemali-a8ba51141" class="icon_link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="icon">
-                     <a href="https://www.instagram.com/prince_mwenye/?hl=en" class="icon_link">
-                         <i class="fab fa-instagram"></i>
-                     </a>
-                 </li>
-                 <li class="icon">
-                     <a href="https://medium.com/@princemwenyemalikey" class="icon_link">
-                         <i class="fab fa-medium"></i>
-                     </a>
-                 </li>
-            </ul>
-        </section>
-        <section class="copyright">
-            <p class="copy_text">
-                &copy; Prince Mwenyemali. All Right Reserved!
-            </p>
-        </section>
-        <div class="top_btn_container">
-            <a href="/" class="top">top</a>
-        </div>
-    </footer>
-    <script src="./js/app.js"></script>
-</body>
-
+            </nav>
+        </header>
+        <script src="./js/app.js"></script>
+    </body>
 </html>

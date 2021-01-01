@@ -1,77 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="contact.css">
-</head>
-
-<body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="/" class="name_link">
-        Prince M. Key
-    </a>
-            <button id="menu_button">
-        <span class="menu_hamburger"></span>
-    </button>
-            <div class="menu_container">
-                <ul class="menu_items">
-                    <li class="menu_item">
-                        <a href="/" class="item_links">home</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="/about" class="item_links">about</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="/portfolio" class="item_links">portfolio</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="/works" class="item_links">work</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="/hobbies" class="item_links">hobbies</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="/gallery" class="item_links">Gallery</a>
-                    </li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prince Mwenyemali</title>
+        <!--------------- font awesome cdn ------->
+    
+        <script src="https://kit.fontawesome.com/c5b8d9c167.js" crossorigin="anonymous"></script>
+    
+        <!------------ local library links --------->
+        <link rel="icon" href="../gallery/images/logo.png" type="img/gif">
+        <link rel="stylesheet" href="contact.css">
+    </head>
+    <body>
+        <header>
+            <section id="top-section">
+                <div class="l_container">
+                    <a href="/" class="logo">Prince <br>Mwenyemali</a>
+                </div>
+                <div class="r_container">
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fas fa-language"></i></button>
+                        <div class="dropdown-content">
+                          <a href="/fr">fran&ccedil;ais</a>
+                          <a href="/sw">swahili</a>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button id="menu_icon"><span class="hamburder"></span></button>
+                    </div>
+                </div>
+            </section>
+            <nav class="navbar">
+                <ul class="nav_items">
+                    <li class="nav_item"><a href="/about/" class="nav_link">about</a></li>
+                    <li class="nav_item"><a href="/Portfolio/" class="nav_link">portfolio</a></li>
+                    <li class="nav_item"><a href="/works" class="nav_link">my works</a></li>
+                    <li class="nav_item"><a href="/contact/" class="nav_link">contact</a></li>
+                    <li class="nav_item"><a href="/hobbies/" class="nav_link">hobbies</a></li>
+                    <li class="nav_item"><a href="/gallery/" class="nav_link">gallery</a></li>
                 </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section id="jumbotron">
-            <div class="contact_header">
-                <h1 class="c_heading">Contact</h1>
-            </div>
-            <form action="https://theprince.co.za" method="POST" class="contact_form">
-                <div class="form_items">
-                    <label for="name" class="form_item_label">Name:</label>
-                    <input type="text" name="name" id="name" class="form_item_input" placeholder="Enter your full name" required>
+            </nav>
+        </header>
+        <main>
+            <section class="wrapper">
+                <div class="inner">
+                    <h4 class="my_name">Prince Mwenyemali</h4>
+                    <h1 class="big_header">contact</h1>
+                    <div class="social-container">
+                        <a href="https://www.facebook.com/prince.mwenyemali" class="social_links" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.facebook.com/prince.mwenyemali" class="social_links" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/prince.mwenyemali" class="social_links" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/prince.mwenyemali" class="social_links" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="form_items">
-                    <label for="email" class="form_item_label">Email:</label>
-                    <input type="text" name="email" id="emai" placeholder="Enter your email" class="form_item_input" required>
+                <img src="../gallery/images/night.jpg" alt="" class="contact-img">
+            </section>
+            <section class="container">
+                <div class="divider">
+                    <h3 class="send_message">send me a message!</h3>
+                    <form class="myform">
+                        <div class="form_wrapper">
+                            <label for="name" class="form_label">Name :</label>
+                            <input type="text" id="name" class="form_input" placeholder="Enter your name please ...">
+                        </div>
+                        <div class="form_wrapper">
+                            <label for="Email" class="form_label">Email :</label>
+                            <input type="email" id="Email" class="form_input" placeholder="ex: you@yourdomain.com">
+                        </div>
+                        <div class="form_wrapper">
+                            <label for="Phone" class="form_label">Telephone :</label>
+                            <input type="text" id="Phone" class="form_input" placeholder="ex: 0123456789">
+                        </div>
+                        <div class="form_wrapper">
+                            <label for="message" class="form_label">Message :</label>
+                            <textarea name="message" placeholder="write your message..." id="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="form_wrapper-btn">
+                            <button type="submit" class="form_btn">Send</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form_items">
-                    <label for="phone" class="form_item_label">Phone:</label>
-                    <input type="text" name="phone" id="phone" placeholder="Enter your phone number" class="form_item_input">
+            </section>
+        </main>
+        <footer>
+            <section class="last">
+                <div class="foo_last">
+                    <p class="copyright"> &copy; <a href="https://www.theprince.co.za" class="copylink" target="_blank">theprince.co.za</a></p>
                 </div>
-                <div class="form_items">
-                    <label for="message" class="form_item_label">Message:</label>
-                    <textarea name="message" id="message" placeholder="Please type your message here!" cols="30" rows="10"></textarea>
+                <div class="foo_last">
+                    <a href="#" class="top_btn"><i class="fas fa-chevron-up"></i></a>
                 </div>
-                <div class="form_items">
-                    <button type="submit">Send</button>
-                </div>
-            </form>
-            <div class="info">
-                this page is being developped so it will come soon!
-            </div>
-        </section>
-    </main>
-</body>
-
+            </section>
+        </footer>
+        <script src="cont.js"></script>
+    </body>
 </html>

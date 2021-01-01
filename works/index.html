@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My works</title>
-    <link rel="stylesheet" href="work.css">
-</head>
-
-<body>
-    <header class="header">
-        <nav class="navbar">
-            <a href="/" class="name_link">
-        Prince M. Key
-    </a>
-            <button id="menu_button">
-        <span class="menu_hamburger"></span>
-    </button>
-            <div class="menu_container">
-                <ul class="menu_items">
-                    <li class="menu_item">
-                        <a href="/about" class="item_links">about</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="/portfolio" class="item_links">portfolio</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="/hobbies" class="item_links">hobbies</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="/gallery" class="item_links">Gallery</a>
-                    </li>
-                    <li class="menu_item">
-                        <a href="/contact" class="item_links_btn">contact</a>
-                    </li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Prince Mwenyemali</title>
+        <!--------------- font awesome cdn ------->
+    
+        <script src="https://kit.fontawesome.com/c5b8d9c167.js" crossorigin="anonymous"></script>
+    
+        <!------------ local library links --------->
+        <link rel="icon" href="./gallery/images/logo.png" type="img/gif">
+        <link rel="stylesheet" href="work.css">
+    </head>
+    <body>
+        <header>
+            <section id="top-section">
+                <div class="l_container">
+                    <a href="/" class="logo">Prince <br>Mwenyemali</a>
+                </div>
+                <div class="r_container">
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fas fa-language"></i></button>
+                        <div class="dropdown-content">
+                          <a href="fr">fran&ccedil;ais</a>
+                          <a href="/sw">swahili</a>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button id="menu_icon"><span class="hamburder"></span></button>
+                    </div>
+                </div>
+            </section>
+            <nav class="navbar">
+                <ul class="nav_items">
+                    <li class="nav_item"><a href="/about/" class="nav_link">about</a></li>
+                    <li class="nav_item"><a href="/Portfolio/" class="nav_link">portfolio</a></li>
+                    <li class="nav_item"><a href="/works" class="nav_link">my works</a></li>
+                    <li class="nav_item"><a href="/contact/" class="nav_link">contact</a></li>
+                    <li class="nav_item"><a href="/hobbies/" class="nav_link">hobbies</a></li>
+                    <li class="nav_item"><a href="/gallery/" class="nav_link">gallery</a></li>
                 </ul>
-            </div>
-        </nav>
-    </header>
-    <section id="jumbotron">
-        <h1 class="j_heading">coming doon</h1>
-        <a href="/" class="J_link">back to the home page</a>
-    </section>
-</body>
-
+            </nav>
+        </header>
+        <script src="work.js"></script>
+    </body>
 </html>

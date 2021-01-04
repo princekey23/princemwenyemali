@@ -233,12 +233,11 @@ header {
     background: var(--secondary);
 }
 .divider_one {
-    background-color: var(--secondary);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:0;
+    margin:0 auto;
     padding:2em 0;
     border-radius:.5em;
     position: relative;
@@ -248,6 +247,7 @@ header {
     height: 200px;
     border-radius:50%;
     object-fit: cover;
+    position: relative;
 }
 .sm_header {
     font-size: var(--text);
@@ -256,25 +256,29 @@ header {
     margin-bottom: 0;
     padding-bottom: .3em;
     font-weight: 900;
+    position: relative;
 }
 .web_small {
     font-size: var(--text);
     color: var(--first);
     font-weight: 900;
     opacity: .7;
+    position: relative;
 }
 .icons_container {
     padding: .5em ;
     border: 2px solid var(--clear-first);
     background-color: var(--secondary);
-    margin: 1em 0;
+    margin: 1em auto;
     border-radius: .3em;
+    position: relative;
 }
 .icons_link {
     font-size: var(--medium);
     color:var(--primary-b);
     padding: 0 .5em;
     transition: all 1s ease-in-out;
+    position: relative;
 }
 .icons_link:hover {
     color:var(--first)
@@ -288,33 +292,37 @@ header {
     border-radius: 1em;
     background: var(--primary-b);
     transition: 1s ease-in-out;
+    position: relative;
 }
 #cv_button:hover {
     background: var(--primary);
 }
 .divider_two {
-    background: var(--secondary);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .welcome {
     font-size: var(--medium);
     color: var(--first);
     opacity: .8;
+    position: relative;
 }
 .well_header {
     font-size: var(--large);
     color: var(--first);
     margin:0;
     text-align: center;
+    position: relative;
 }
 .text {
     color: var(--first);
     font-weight: 900;
     opacity: .8;
     font-size: var(--small-text);
+    position: relative;
 }
 .welcome_btn {
     font-size: var(--small);
@@ -326,6 +334,7 @@ header {
     font-weight: 900;
     text-decoration: none;
     transition: all 1s ease-in-out;
+    position: relative;
 }
 .welcome_btn:hover {
     background: var(--clear-first);
@@ -353,6 +362,22 @@ header {
     .nav_link {
         color:var(--secondary);
         padding: 1em 2em;
+    }
+    .container_one {
+        width: 100vw;
+        height:auto;
+        margin: 0 auto;
+    }
+    .divider_one {
+        margin:0 auto;
+        position: relative;
+    }
+    .divider_two {
+        margin:0 auto;
+        position: relative;
+    }
+    .well_header {
+        font-size: var(--medium);
     }
 }
 @media (max-width:380px) {

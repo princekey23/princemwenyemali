@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Prince Mwenyemali</title>
+        <!-- google fonts -->
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
         <!--------------- font awesome cdn ------->
 
         <script src="https://kit.fontawesome.com/c5b8d9c167.js" crossorigin="anonymous"></script>
@@ -13,6 +18,7 @@
         <link rel="stylesheet" href="contact.css">
     </head>
     <body>
+      <!-- ===== header ===== -->
       <header>
           <nav class="top-navigation">
             <div class="navig">
@@ -79,9 +85,109 @@
                 </ul>
           </nav>
       </header>
+
+      <!-- ===== main ===== -->
+
+
       <main>
 
+
+        <!-- ===== introduction ===== -->
+
+
+        <section class="container-fluid">
+             <div class="intro">
+               <h1 class="intro-headding">
+                 contact
+               </h1>
+               <div class="division"></div>
+             </div>
+        </section>
+        <section class="container-fluid">
+        </section>
+
+
+        <!-- ===== contact form  ===== -->
+
+         <section class="container-fluid">
+           <div class="container-grid">
+             <div class="grid">
+               <form id="form" netlify>
+                 <div class="form-elements-wrapper">
+                   <div class="form-elements">
+                     <div class="form-element">
+                       <div class="element">
+                         <label for="Nom">Nom:</label>
+                       </div>
+                       <div class="element">
+                         <input type="text" id="Nom" name="Nom" placeholder="Entre ton nom..." required>
+                       </div>
+                     </div>
+                     <div class="form-element">
+                       <div class="element">
+                         <label for="Prenom">Prénom:</label>
+                       </div>
+                       <div class="element">
+                         <input type="text" id="Prenom" name="Prenom" placeholder="Entre ton prénom..." required>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="form-elements">
+                     <div class="form-element">
+                       <div class="element">
+                         <label for="phone">Téléphone:</label>
+                       </div>
+                       <div class="element">
+                         <input type="tel" id="phone" name="phone" placeholder="Entre ton numéro..." required>
+                       </div>
+                     </div>
+                     <div class="form-element">
+                       <div class="element">
+                         <label for="Pre-Nom">Email:</label>
+                       </div>
+                       <div class="element">
+                          <input type="email" id="email" name="email" placeholder="Entre ton email..." required>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="form-element-wrapper2">
+                   <div class="textarea-wrapper">
+                     <div class="element2">
+                       <label for="message">Message:</label>
+                     </div>
+                     <div class="element2">
+                       <textarea name="message" rows="6" cols="auto" placeholder="tapez ton message..." required></textarea>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="form-elements-wrapper">
+                   <div class="element">
+                     <button type="submit" id="submi-btn">envoie <i class="fab fa-telegram"></i></button>
+                   </div>
+                 </div>
+               </form>
+             </div>
+           </div>
+         </section>
+
+        <!-- ===== important links ===== -->
+
+
+        <section class="container-fluid">
+           <div id="social-network">
+             
+           </div>
+        </section>
+
       </main>
+
+
+
+      <!-- ===== footer contents ====== -->
+
+
+
       <footer id="footer">
           <div class="copyright">
             <div class="copyright-text">

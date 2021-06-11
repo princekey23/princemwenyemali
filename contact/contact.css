@@ -406,7 +406,7 @@ main {
 }
 .element2 textarea:focus {
   background: var(--primary-b);
-  height: max-content;
+  min-height: 3ovh;
 }
 #submi-btn {
   padding: .8rem 1.5rem;

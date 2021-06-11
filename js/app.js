@@ -12,6 +12,7 @@ myLinks.forEach(link =>{
 		document.body.classList.remove('nav-Open');
 	})
 });
+
 // back to top button
 
 //Get the button:

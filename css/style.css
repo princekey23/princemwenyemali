@@ -782,7 +782,7 @@ main {
 .cv-btn1 {
   padding: .5rem 1rem;
   position: relative;
-  margin: 0;
+  margin: .4rem 0;
   font-size: var(--medium);
   background: var(--first);
   position: relative;
@@ -834,6 +834,12 @@ main {
   position: relative;
   padding: 1rem 0;
   margin-top: 1rem;
+}
+.contact-wrapper3 {
+  width:90%;
+  padding: .5rem;
+  position: relative;
+  margin: 0 auto;
 }
 .contact-details {
   display: flex;

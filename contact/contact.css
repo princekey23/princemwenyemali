@@ -241,3 +241,88 @@ main {
     margin:0;
     padding: 0;
 }
+
+
+
+/* ===== footer section ====== */
+#footer {
+  width: 100vw;
+  position: relative;
+  margin:0;
+  padding:0 0 1rem 0;
+  background: var(--primary-b);
+}
+/* ====== copyright section ======= */
+.copyright {
+  width: 100%;
+  position: relative;
+  min-height:max-content ;
+  padding: 1rem 0 0 0;
+  margin: .5rem auto;
+  text-align: center;
+  background: var(--primary-b);
+}
+.copyright-text {
+  width:95%;
+  margin:0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.theprince {
+  text-decoration: none;
+}
+.theprince:hover {
+  color: var(--primary-b);
+}
+.divider {
+  width: 30%;
+  height: 3px;
+  border: .5rem;
+  margin: 1rem auto 0 auto;
+  background: var(--faded);
+  opacity: .5;
+}
+
+.copy-image {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+}
+.copy {
+  position: relative;
+  margin:0;
+  padding:0;
+}
+
+/* ===== back to the top ======*/
+
+
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--first); /* Set a background color */
+  color: var(--primary-b); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 8px 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: var(--medium); /* Increase font size */
+  font-weight: 800; /* thickeness of the font */
+  transition: all 250ms ease-in-out;
+}
+
+#myBtn:hover {
+  background-color: var(--faded); /* Add a dark-grey background on hover */
+}

@@ -2,6 +2,7 @@
 :root {
     --primary: #000145;
     --primary-b: #5312BE;
+    --primary-clear: rgba(0,1,62,.5);
     --secondary: #00A7E3;
     --mess: rgb(10,30,200);
     --danger : rgb(255,0,1);
@@ -763,6 +764,7 @@ main {
   margin: .5rem auto;
   padding:1rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -813,8 +815,8 @@ main {
   margin: 0 auto;
   text-align: center;
 }
-.contact-heading,
-.photo-heading {
+.photo-heading,
+.contact-heading {
   font-weight: 900;
   color: var(--mess);
   font-size: var(--large);
@@ -960,20 +962,41 @@ main {
 #footer {
   width: 100vw;
   position: relative;
-  height: max-content;
   margin:0;
-  padding:2rem 0;
+  padding:0 0 1rem 0;
   background: var(--primary-b);
 }
 .foo-container-fluid {
-  width: 90%;
+  width: 100%;
   position: relative;
-  min-height:60vh ;
+  min-height:100vh ;
   padding: 1rem 0;
   margin: 0 auto;
-  background: var(--primary);
+  background: var(--primary-clear);
+}
+.foo-heading-container {
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  padding: .5rem;
+}
+.foo-heading {
+  font-size: var(--medium);
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--primary-b);
+  text-align: center;
 }
 /* ======= footer contact section ========== */
+.foo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  margin:0 auto;
+  width:90%;
+  height: max-content;
+  background: var(--clear-clear);
+  border-radius: 1rem;
+}
 .footer-contact {
   width: 100%;
   position: relative;
@@ -981,8 +1004,9 @@ main {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 1rem 0;
+  padding:1rem 0 2rem 0;
   margin:0;
+  background: var(--primary-clear);
 }
 .foo-text {
   margin: 0;
@@ -1000,8 +1024,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--primary-b);
-  box-shadow: 0 0 0 5px  var(--clear-clear);
+  background: var(--dark-clear);
+  box-shadow: 0 0 0 5px  var(--primary-clear);
   border-radius: 1rem;
 }
 .formElement {
@@ -1020,32 +1044,60 @@ main {
 }
 .label {
   position: relative;
-  left:0;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0rem .8rem;
-  width: 35%;
-  height: 100%;
-  background: var(--clear-second);
+  background: transparent;
+  width:30%;
+  padding: 0 1rem;
   color: var(--first);
   border-radius: .4rem 0 0 .4rem;
   font-size: var(--text-small);
 }
-.input,
-#message  {
+.input::placeholder {
+  color: var(--primary-b);
+}
+
+.input {
   width: 65%;
+  height: 100%;
+  padding: 0 .8rem;
+  background: transparent;
+  border-radius: 0 .4rem .4rem 0;
+  color: var(--first);
+  background: var(--dark-clear);
+  border: none;
+  outline: none;
+  font-size: var(--text-small);
+  position: relative;
+  transition: all 250ms ease-in-out;
+}
+
+#message  {
+  width: 100%;
   height: 90%;
   padding: .4rem .8rem;
   background: transparent;
   border-radius: 0 .4rem .4rem 0;
   color: var(--first);
   border: none;
+  text-align: right;
   outline: none;
   font-size: var(--text-small);
   position: relative;
+  transition: height 250ms ease-in-out;
+}
+#message::placeholder {
+  color: var(--primary-b);
 }
 #message:focus {
   height: 40vh;
+}
+#message-label {
+  top:1rem;
+  background: transparent;
+  width:30%;
+  padding: 0 1rem;
+  color: var(--first);
+  border-radius: .4rem 0 0 .4rem;
+  font-size: var(--text-small);
 }
 .form-button {
   width: 50%;
@@ -1066,17 +1118,85 @@ main {
 .footer-form-btn:hover {
   background: var(--faded);
 }
+.social-footer {
+  width: 80%;
+  margin:0 auto;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.fool {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:.5rem;
+}
+.email-container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0
+}
+.direct {
+  width:100%;
+  height: max-content;
+  position: relative;
+  display: flext;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+}
+.dirfool {
+  list-style: none;
+  margin: 0;
+  padding:1rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dirli {
+  margin: .3rem 0;
+  position: relative;
+  padding: 0;
+}
+.dirli i {
+  color:var(--faded);
+  font-size: var(--medium);
+  padding: .3rem;
+  margin:0;
+  position: relative;
+}
+.dirlink {
+  color: var(--failed);
+  position: relative;
+  font-size: var(--text-small);
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0;
+}
 
 
 
 /* ====== copyright section ======= */
 .copyright {
-  width: 90%;
+  width: 100%;
   position: relative;
   min-height:max-content ;
-  padding: 1rem 0;
-  margin: 0 auto;
+  padding: 1rem 0 0 0;
+  margin: .5rem auto;
   text-align: center;
+  background: var(--primary-b);
 }
 .copyright-text {
   width:95%;
@@ -1115,7 +1235,43 @@ main {
   margin:0;
   padding:0;
 }
+
+
+
+
+
+/* ===== back to the top ======*/
+
+
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--first); /* Set a background color */
+  color: var(--primary-b); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 8px 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: var(--medium); /* Increase font size */
+  font-weight: 800; /* thickeness of the font */
+  transition: all 250ms ease-in-out;
+}
+
+#myBtn:hover {
+  background-color: var(--faded); /* Add a dark-grey background on hover */
+}
+
+
+
+
 /* ===== responsive container =======  */
+
 
 
 

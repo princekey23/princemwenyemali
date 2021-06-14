@@ -1309,16 +1309,243 @@ main {
 
 
 @media screen and (max-width:1024px){
-    .top-navigation {
+  :root{
+    font-size: 2rem;
+  }
+  header {
+    width:100vw;
+    padding:0;
+    margin:0;
+  }
+.top-navigation {
       text-align: center;
+      width:100vw;
+      position: relative;
     }
-    .nav-menu {
+  .nav-menu {
       display: none;
   }
   #search-button {
     display: flex;
+    width: 95%;
   }
   .nav-link {
     font-size: var(--medium);
+  }
+  /* ======= main ====== */
+  main {
+    width:100vw;
+    margin:0;
+    padding: .3rem 0;
+    position: relative;
+  }
+  #intro {
+    width: 100vw;
+    position: relative;
+    margin:0;
+    padding:.5rem 0;
+    height: fit-content;
+  }
+  .pro-detail {
+    width: 95%;
+    margin:0 auto;
+    position: relative;
+  }
+  .free {
+    font-size: var(--small);
+  }
+  .prof-text-wrapper {
+    width:90%;
+    margin:0 auto;
+    position: relative;
+    padding: .5rem;
+  }
+  .text {
+    font-size: var(--text-small);
+  }
+  .text-small {
+    font-size: 1rem;
+  }
+  .user-container {
+    padding-bottom: 1rem;
+  }
+  /* ====== <!-- go down button === jump to about --> ====== */
+  .go-down {
+    margin:.5rem auto;
+  }
+  /* ========= <!-- ======= about  section =======--> ====== */
+  #apro {
+    width:100vw;
+    position: relative;
+    margin:0;
+    text-align: center;
+  }
+  .apro-container{
+    width:95%;
+    margin:0 auto;
+    padding: .5rem 0;
+  }
+  .apro-heading {
+    margin-bottom: .5rem;
+  }
+  .small-container {
+    width: 80%;
+    padding: .5rem;
+    position: relative;
+    margin: 0 auto;
+  }
+  .apro-small {
+    font-size: var(--small);
+  }
+  .apro-wrapper2 {
+    width:95%;
+    margin:0 auto;
+    padding: 0;
+    position: relative;
+  }
+  .montex {
+    width: 98%;
+    padding: .5rem 0;
+    position: relative;
+    margin:0 auto .5rem auto;
+  }
+  .apro-text {
+    font-size: var(--text-small);
+    padding: .5rem ;
+  }
+  .apro-text-sm {
+    font-size: 18px;
+  }
+  .linktext {
+    margin-top: .5rem;
+  }
+  .apro-link {
+    font-size: var(--medium);
+  }
+  /* ======= <!-- service section with a brief of what i do. --> ======= */
+  #service {
+    width:100vw;
+    position: relative;
+    padding: .5rem 0;
+    margin:0;
+  }
+  .container {
+    width: 90%;
+    position: relative;
+    margin:0 auto;
+    padding:0;
+    border-radius: 1rem;
+  }
+  .card {
+    width:98%;
+    margin:0 auto;
+    position: relative;
+    padding: .5rem;
+  }
+  .titre {
+    font-size: var(--small);
+    padding: .5rem;
+  }
+  #cv {
+    width:100vw;
+    margin: 0 auto;
+    padding: .5rem 0;
+  }
+  .cv-container {
+    width:95%;
+    position: relative;
+    text-align: center;
+  }
+  .text {
+    font-size: var(--small);
+    padding: .5rem;
+  }
+  .cv-small {
+    font-size: var(--text-small);
+  }
+  .cv-links {
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .cv-btn {
+    margin: 0 .3rem;
+  }
+  /* ======= <!-- ======= contact section =======--> ======== */
+  #contact {
+    width:100vw;
+    position: relative;
+    margin:0;
+    padding: .5rem 0;
+    display: block;
+  }
+  .contact-container {
+    width:100%;
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+  .contact-text-container {
+    width:95%;
+    margin:0 auto;
+  }
+  /* ======= <!-- ======= gallery section =======--> ======= */
+  .photo {
+    width:100vw;
+    position: relative;
+    margin:0;
+    padding: .5rem 0;
+  }
+  .photo-container {
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
+  }
+  .photo-heading2 {
+    font-size: var(--medium);
+  }
+  .photo-grid {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    grid-gap: 10px;
+    justify-content: center;
+  }
+  .photo-grid-img {
+    position: relative;
+    margin:0;
+    width: 100%;
+  }
+  /* ======== <!-- footer with some special links and more --> ======== */
+  #footer {
+    width:100vw;
+    padding:0;
+    margin:0;
+    display: block;
+    position: relative;
+  }
+  .foo-container-fluid {
+    width: 100vw;
+    margin: 0;
+    padding: .5rem 0;
+    display: block;
+    position: relative;
+    left: 0;
+    right: 0;
+  }
+  .foo-grid {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    right:0;
+    border-radius: 1rem;
+  }
+  .footer-contact {
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
   }
 }

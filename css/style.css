@@ -12,6 +12,9 @@ body {
    background: var(--FirstColor);
    padding:0;
    box-sizing: border-box;
+   background-image: url("/gallery/images/miye2.jpg");
+   background-repeat: no-repeat;
+   background-position: top;
 }
 html {
     scroll-behavior: smooth;
@@ -23,7 +26,27 @@ html {
   text-decoration: none;
   list-style: none;
 }
+
+
+/* ======= background ======*/
+
+#background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  padding:0;
+  margin:0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+
+
 /*********** <!-- header  wth Navbar, Navlinks, and Nav-icon --> *********/
+
+
+
+
 header {
   width: 99vw;
   margin: 0 auto;
@@ -53,7 +76,11 @@ header {
   margin:0;
   padding:0;
 }
+
+
 /* ======= navigation menu ======= */
+
+
 .nav-menu {
   position: relative;
   display: flex;
@@ -83,165 +110,156 @@ header {
   opacity: .7;
 }
 
+
+
+
+
 /* ====== main content ======= */
+
+
+
 main {
   width:99vw;
   margin:0 auto;
   position: relative;
   padding:0;
+  z-index: 1;
 }
+
+
+/* ======== introduction ========== */
 #intro {
-  width: 95%;
-  height: 90vh;
-  margin:0 auto;
+  width: 99vw;
+  min-height: 90vh;
   position: relative;
-  padding: 0;
-  border-radius: 1rem;
+  margin:0;
+  padding:0;
+  background: var(--clear);
 }
 .prof-wrapper {
-  position: relative;
-  margin:0;
-  padding:0;
-  border-radius: 1rem;
-  width:100%;
-  height: 100%;
-}
-.img-wrapper {
-  width:100%;
+  width:50%;
+  float: right;
   height: 100%;
   position: relative;
-  margin:0;
-  padding:0;
-  border-radius: 1rem;
-}
-.prof-img {
-  width:100%;
-  height: 100%;
-  object-fit: cover;
-  position: relative;
-  margin: 0;
-  border-radius: 1rem;
-  padding: 0;
+  padding: 1rem;
+  margin: 0 auto;
 }
 .pro-detail {
   width:100%;
+  float: right;
   height: 100%;
-  border-radius: 1rem;
-  position: absolute;
-  margin: 0;
-  padding: 1rem;
-  z-index: 1;
-  top:0;
-  left:0;
-  background: var(--clear);
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-}
-.details-content {
   position: relative;
-  text-align: right;
-  margin:0;
-  padding: 1rem;
-  width: 60%;
-}
-.headers {
-  width: 80%;
-  padding: .4rem;
-  position: relative;
-  margin:0 auto;
+  padding: 0;
+  margin: 0 ;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.details-content {
+  width:100%;
+  float: right;
+  height: 100%;
+  position: relative;
+  padding: 1rem 0;
+  margin: 0 ;
+  bottom: -20px;
+  transform: translateY(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: var(--clear);
+}
+.headers {
+  position: relative;
+  width:100%;
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding: .3rem;
 }
 .mon {
   font-size: 1.5rem;
   color: var(--FirstColor);
+  opacity: .8;
+  font-weight: 750;
   position: relative;
   margin: 0;
-  padding:0;
-  font-weight: 500;
-  opacity: .8;
-  text-align: center;
+  padding:0 .3rem .2rem .3rem;
 }
 .prof-heading {
   font-size: 2rem;
   font-weight: 900;
-  color:var(--FirstColor);
-  padding: .3rem;
-  margin:0;
-  text-align: center;
+  position: relative;
+  margin: 0;
+  padding: 0 .5rem;
+  color: var(--FirstColor);
 }
 .free {
   font-size: 1.2rem;
   color: var(--FirstColor);
+  opacity: .6;
+  font-weight: 750;
   position: relative;
   margin: 0;
-  padding:0;
-  font-weight: 500;
-  opacity: .8;
-  text-align: center;
+  padding:0 .3rem;
 }
 .prof-text-wrapper {
   width: 90%;
-  text-align: left;
-  padding: .4rem;
-  margin: 0 auto;
+  margin:0 auto;
+  padding:.5rem;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
 }
 .text,
 .freelance {
   font-size: 1rem;
-  color: var(--FirstColor);
-  padding: .1rem;
-  font-weight: 300;
+  position: relative;
+  padding: .3rem;
   margin:0;
+  color: var(--FirstColor);
+  padding:300;
   opacity: .6;
   transition: 1s ease-in-out;
-  text-align: center;
 }
 .freelance:hover {
   color: var(--buttonColor);
 }
 .text-small {
-  font-size: .9rem;
-  color: var(--FirstColor);
-  padding: .2rem 2rem;
-  font-weight: 300;
+  font-size: .8rem;
+  position: relative;
+  padding: .3rem;
   margin:0;
-  opacity: .4;
-  text-align: center;
+  color: var(--FirstColor);
+  padding:300;
+  opacity: .5;
+  transition: 1s ease-in-out;
 }
 .my-button-container {
-  width: 50%;
-  margin: 0 auto;
-  padding:.5rem;
+  width:100%;
+  padding: .5rem 0;
   position: relative;
   text-align: center;
 }
 .detail-btn {
   padding: .5rem 1rem;
-  margin:0;
   position: relative;
+  margin:0 auto;
   background: var(--buttonColor);
-  border-radius: 8px;
+  outline:none;
   border:none;
-  outline: none;
   transition: 1s ease-in-out;
-}
-.detail-link {
-  color: var(--FirstColor);
-  font-weight: 600;
-  font-size: 1.5rem;
-  position: relative;
+  border-radius: .3rem;
 }
 .detail-btn:hover {
-  background: var(--clear);
+  background: var(--secondColor);
+}
+.detail-link {
+  font-size: 1.2rem;
+  font-weight: 700;
+  position: relative;
+  color:var(--FirstColor);
 }
 
 
@@ -346,6 +364,10 @@ main {
 }
 
 
+
+/* ====== tablet view ==>  Ipad pro ======= */
+
+
 @media (max-width:1000px){
   .navBar {
     width: 100%;
@@ -354,6 +376,12 @@ main {
      font-size: 1rem;
    }
 }
+
+
+
+/* ====== tablet view ==> Ipad and other tablet ======= */
+
+
 @media (max-width:800px){
   .nav-menu {
     display:none;
@@ -378,6 +406,14 @@ main {
    padding: 2rem 0;
  }
 }
+
+
+
+/* ====== tablet view ==> smaller tablet ======= */
+
+
+
+
 @media (max-width:600px) {
    .details-content {
      width: 100%;
@@ -390,11 +426,15 @@ main {
      position: relative;
      text-align: center;
    }
+   #intro {
+     height: fit-content;
+   }
    .pro-detail {
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     height: max-content;
    }
 }
 @media (max-width:320px){

@@ -435,12 +435,16 @@ main {
    #intro {
      height: fit-content;
    }
+   .prof-wrapper {
+     width:100%;
+   }
    .pro-detail {
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
      height: max-content;
+     width: 100%;
    }
 }
 @media (max-width:320px){

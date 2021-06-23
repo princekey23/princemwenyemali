@@ -12,9 +12,7 @@ body {
    background: var(--FirstColor);
    padding:0;
    box-sizing: border-box;
-   background-image: url("/gallery/images/miye2.jpg");
-   background-repeat: no-repeat;
-   background-position: top;
+   font-family: sans-serif;
 }
 html {
     scroll-behavior: smooth;
@@ -28,20 +26,6 @@ html {
 }
 
 
-/* ======= background ======*/
-
-#background {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  padding:0;
-  margin:0;
-  z-index: -1;
-  object-fit: cover;
-
-}
-
-
 
 /*********** <!-- header  wth Navbar, Navlinks, and Nav-icon --> *********/
 
@@ -49,7 +33,7 @@ html {
 
 
 header {
-  width: 99vw;
+  width: 100vw;
   margin: 0 auto;
   padding: 10px 0;
   -webkit-padding: 10px 0;
@@ -121,7 +105,7 @@ header {
 
 
 main {
-  width:99vw;
+  width:100vw;
   margin:0 auto;
   position: relative;
   padding:0;
@@ -131,163 +115,125 @@ main {
 
 /* ======== introduction ========== */
 #intro {
-  width: 99vw;
-  min-height: 90vh;
+  width: 100%;
   position: relative;
-  margin:0;
-  padding:0;
-  background: var(--clear);
-  z-index: inherit;
-}
-.prof-wrapper {
-  width:50%;
-  float: right;
-  height: 100%;
-  position: relative;
-  padding: 1rem;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  background: var(--buttonColor);
+  min-height: 80vh;
 }
 .pro-detail {
-  width:100%;
-  float: right;
-  height: 100%;
   position: relative;
-  padding: 0;
-  margin: 0 ;
+  margin: 0;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.details-content {
-  width:100%;
-  float: right;
-  height: 100%;
+details-content {
   position: relative;
-  padding: 1rem 0;
-  margin: 0 ;
-  bottom: -20px;
-  transform: translateY(20px);
+  height: 100%;
+  width:100%;
+  margin: 0;
+  padding: 1rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background: var(--clear);
-  border-radius: 1rem;
 }
 .headers {
-  position: relative;
-  width:100%;
-  position: relative;
-  text-align: center;
   margin: 0;
-  padding: .3rem;
-}
-.mon {
-  font-size: 1.5rem;
-  color: var(--FirstColor);
-  opacity: .8;
-  font-weight: 750;
-  position: relative;
-  margin: 0;
-  padding:0 .3rem .2rem .3rem;
-}
-.prof-heading {
-  font-size: 2rem;
-  font-weight: 900;
-  position: relative;
-  margin: 0;
-  padding: 0 .5rem;
-  color: var(--FirstColor);
-}
-.free {
-  font-size: 1.2rem;
-  color: var(--FirstColor);
-  opacity: .6;
-  font-weight: 750;
-  position: relative;
-  margin: 0;
-  padding:0 .3rem;
-}
-.prof-text-wrapper {
-  width: 90%;
-  margin:0 auto;
-  padding:.5rem;
-  position: relative;
-  text-align: center;
-}
-.text,
-.freelance {
-  font-size: 1rem;
-  position: relative;
-  padding: .3rem;
-  margin:0;
-  color: var(--FirstColor);
-  padding:300;
-  opacity: .6;
-  transition: 1s ease-in-out;
-}
-.freelance:hover {
-  color: var(--buttonColor);
-}
-.text-small {
-  font-size: .8rem;
-  position: relative;
-  padding: .3rem;
-  margin:0;
-  color: var(--FirstColor);
-  padding:300;
-  opacity: .5;
-  transition: 1s ease-in-out;
-}
-.my-button-container {
-  width:100%;
   padding: .5rem 0;
   position: relative;
   text-align: center;
+  text-transform: uppercase;
+}
+.mon {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin:0;
+  padding:0;
+  color: var(--FirstColor);
+  opacity: .4;
+}
+.prof-heading {
+  margin:0;
+  font-weight: 900;
+  color: var(--FirstColor);
+  position: relative;
+  font-size: 2rem;
+}
+.free {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin:0;
+  padding:0;
+  color: var(--FirstColor);
+  opacity: .6;
+}
+.prof-text-wrapper {
+  width: 60%;
+  margin:0 auto;
+  position: relative;
+  padding: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.text {
+  color: var(--secondColor);
+  opacity: .6;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+.freelance {
+  color: var(--secondColor);
+  opacity: .7;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+  transition: 1s ease-in-out;
+}
+.freelance:hover {
+  color: var(--FirstColor);
+}
+.text-small {
+  font-size: .8rem;
+  color: var(--FirstColor);
+  font-weight: 300;
+  position: relative;
+  opacity: .3;
+}
+.my-button-container {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  padding: 1rem 0;
 }
 .detail-btn {
+  font-size: 1.5rem;
   padding: .5rem 1rem;
   position: relative;
-  margin:0 auto;
-  background: var(--buttonColor);
+  background: var(--FirstColor);
   outline:none;
   border:none;
-  transition: 1s ease-in-out;
-  border-radius: .3rem;
-}
-.detail-btn:hover {
-  background: var(--secondColor);
+  border-radius: 5px;
+  transition: background 1s ease-in-out;
 }
 .detail-link {
-  font-size: 1.2rem;
-  font-weight: 700;
-  position: relative;
-  color:var(--FirstColor);
-}
-
-
-
-/* ========== a_propos ======== */
-#apro {
-  width:99vw;
-  margin: 0 auto;
-  padding: 1rem 0;
-  position: relative;
-  background: var(--FirstColor);
-  height: fit-content;
-}
-.heading {
-  font-size: 2rem;
-  font-weight: 900;
   color: var(--secondColor);
-  margin: 0 ;
-  padding: .5rem;
-  text-align: center;
-  text-transform: uppercase;
-  opacity: .7;
+  text-transform: capitalize;
 }
-
+.detail-btn:hover {
+  background: var(--clear);
+}
 
 
 
@@ -394,13 +340,17 @@ main {
 /* ====== tablet view ==>  Ipad pro ======= */
 
 
-@media (max-width:1000px){
+@media (max-width:1024px){
+  .nav-menu {
+    display:none;
+  }
+  .menu-button {
+    display: block;
+ }
   .navBar {
-    width: 100%;
-    padding: 5px;
-  } .detail-link {
-     font-size: 1rem;
-   }
+    width: 100vw;
+    padding: 5px 15px;
+  }
 }
 
 
@@ -409,33 +359,12 @@ main {
 
 
 @media (max-width:800px){
-  .nav-menu {
-    display:none;
-  }
-  .menu-button {
-    display: block;
-  }
   #intro {
-    width:99vw;
-    margin: 0;
-    padding:0;
-    min-height: 90vh;
+    width:100vw;
+    height: max-content;
+    padding: 10px 0;
   }
-  .prof-wrapper  {
-    width:100%;
-    height: 100%;
-  }
- .prof-text-wrapper {
-   width: 99%;
- }
- .pro-detail {
-   width:100%;
-   height: 100%;
-   padding: 0;
-   margin:0;
-   height: max-content;
-   padding: 2rem 0;
- }
+
 }
 
 
@@ -445,33 +374,7 @@ main {
 
 
 @media (max-width:600px) {
-   .details-content {
-     width: 100%;
-     margin: 0;
-     padding:0;
-     text-align: center;
-   }
-   .my-button-container {
-     width:100%;
-     position: relative;
-     text-align: center;
-   }
-   #intro {
-     height: fit-content;
-     width: 99vw;
-     margin:0 auto;
-   }
-   .prof-wrapper {
-     width:100%;
-   }
-   .pro-detail {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     height: max-content;
-     width: 100%;
-   }
+
 }
 @media (max-width:320px){
   :root {

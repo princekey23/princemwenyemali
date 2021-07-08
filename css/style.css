@@ -18,8 +18,6 @@ html {
     scroll-behavior: smooth;
 }
 * {
-  margin:0;
-  padding:0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
@@ -102,146 +100,267 @@ header {
 
 /* ====== main content ======= */
 
-
-
 main {
   width:100vw;
-  margin:0 auto;
+  margin:0;
+  padding: 1rem 0;
   position: relative;
-  padding:0;
-  z-index: 1;
+  background-color: var(--secondColor);
+}
+
+/* ========= introduction ========= */
+
+#intro, #apro {
+  width:90%;
+  min-height: 60vh;
+  margin: 0 auto;
+  padding: 30px 0;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.prof-wrapper {
+  margin: 0;
+  padding: 1rem;
+  position: relative;
+}
+.headers {
+  margin-bottom: 10px;
+  position: relative;
+  width:100%;
+  padding: .5rem 0;
+}
+.freeh3 {
+  position: relative;
+  color: var(--FirstColor);
+  font-weight: 600;
+  opacity: .8;
+  font-size: 1.5em;
+  margin-bottom: .3rem;
+}
+.prof-heading {
+  position: relative;
+  margin: 15px 0;
+  color: var(--FirstColor);
+  font-weight: 900;
+  opacity: .9;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+.free-cont {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+}
+.free {
+  position: relative;
+  color: var(--FirstColor);
+  font-weight: 600;
+  opacity: .6;
+  font-size: 1.5em;
+}
+.my-button-container {
+  width: 70%;
+  margin: 0 auto;
+  padding: .5rem 0;
+  position: relative;
 }
 
 
-/* ======== introduction ========== */
-#intro {
+/* ======= a_propos ======= */
+
+#apro {
+  background: var(--FirstColor);
+}
+.heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+#apro .heading {
+  color: var(--clear);
+}
+.apro-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 5px;
+  margin: 0 auto;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+}
+.apro-wrapper {
+  width: 85%;
+  margin: 0 auto;
+  padding: .3rem;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  border-radius: 10px;
+}
+.apro-img-container {
+  width:100%;
+  margin: 0;
+  padding:15px;
+  border-radius: inherit;
+  position: relative;
+}
+.apro-img {
+  width:100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+.apro-wrapper2 {
+  width: 85%;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  position: relative;
+  border-radius: 10px;
+}
+.montex {
+  padding: 0;
+  margin:0;
+  position: relative;
   width: 100%;
+}
+.apro-text {
+  color: var(--clear);
   position: relative;
   margin: 0;
   padding: 0;
-  background: var(--buttonColor);
-  min-height: 80vh;
+  font-size: auto;
 }
-.pro-detail {
+.apro-text-sm {
+  font-size: 15px;
+  color: var(--clear);
   position: relative;
   margin: 0;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding: 0;
 }
-details-content {
-  position: relative;
-  height: 100%;
-  width:100%;
-  margin: 0;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.headers {
-  margin: 0;
+.linktext {
   padding: .5rem 0;
+  margin: 0;
   position: relative;
-  text-align: center;
-  text-transform: uppercase;
 }
-.mon {
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin:0;
-  padding:0;
-  color: var(--FirstColor);
-  opacity: .4;
-}
-.prof-heading {
-  margin:0;
-  font-weight: 900;
-  color: var(--FirstColor);
-  position: relative;
-  font-size: 2rem;
-}
-.free {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin:0;
-  padding:0;
-  color: var(--FirstColor);
-  opacity: .6;
-}
-.prof-text-wrapper {
-  width: 60%;
-  margin:0 auto;
-  position: relative;
-  padding: .5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-.text {
-  color: var(--secondColor);
-  opacity: .6;
-  font-size: 1rem;
-  margin-bottom: 10px;
-  position: relative;
-  font-weight: 500;
-}
-.freelance {
-  color: var(--secondColor);
-  opacity: .7;
-  font-size: 1rem;
-  margin-bottom: 10px;
-  position: relative;
-  font-weight: 500;
-  transition: 1s ease-in-out;
-}
-.freelance:hover {
-  color: var(--FirstColor);
-}
-.text-small {
-  font-size: .8rem;
-  color: var(--FirstColor);
-  font-weight: 300;
-  position: relative;
-  opacity: .3;
-}
-.my-button-container {
-  width: 60%;
-  margin: 0 auto;
-  position: relative;
-  text-align: center;
-  padding: 1rem 0;
-}
-.detail-btn {
-  font-size: 1.5rem;
-  padding: .5rem 1rem;
-  position: relative;
-  background: var(--FirstColor);
-  outline:none;
-  border:none;
-  border-radius: 5px;
-  transition: background 1s ease-in-out;
-}
-.detail-link {
-  color: var(--secondColor);
-  text-transform: capitalize;
-}
-.detail-btn:hover {
+.apro-link {
   background: var(--clear);
+  color: var(--FirstColor);
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: all 1s ease-in-out;
+}
+.apro-link i {
+  transition: transform 1s ease-in-out;
+}
+.apro-link:hover {
+  background: var(--secondColor);
+}
+.apro-link:hover i {
+  transform: translateX(5px);
 }
 
 
+/*======== service section ========= */
 
 
+#service {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  position:relative;
+}
+#service .heading {
+  color: var(--FirstColor);
+  text-align: center;
+}
+.container {
+  width: 95%;
+  padding: 10px 0;
+  position: relative;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+  gap: 10px;
+}
+.card {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+.titre {
+  color: var(--FirstColor);
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.card-img {
+  width: 85%;
+  padding: 5px;
+  position: relative;
+  margin: 0 auto;
+}
+.img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+  margin: 0;
+  padding:0;
+}
+.serv-details {
+  width: 85%;
+  padding: 20px 15px;
+  margin: 0 auto;
+  background: var(--buttonColor);
+  border-radius: 15px;
+  display: none;
+}
+.card:hover > .serv-details{
+  position:absolute;
+  display: block;
+  top: 70%;
+  transform: translateY(-70%);
+  left: 20px;
+}
+.d-text {
+  color: var(--FirstColor);
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  opacity: .7;
+}
+.card-link {
+  padding: 8px 12px;
+  background: var(--FirstColor);
+  color: var(--buttonColor);
+  border-radius: 5px;
+  opacity: .9
+  transition: opacity 1s ease-in-out;
+}
+.card-link i {
+  transition: transform 1s ease-in-out;
+}
+.card-link:hover {
+  opacity: 1;
+}
+.card-link:hover i {
+  transform: rotate(360deg);
+}
 
 
 
 /* ======= buttons ========== */
+
+
+/* ====== menu button ======== */
+
+
 .menu-button {
   padding: 1rem .5rem;
   position: relative;
@@ -275,7 +394,33 @@ details-content {
   border-radius: 6px;
   transition: 1s ease-in-out;
 }
-/* ===== back to the top ======*/
+
+
+/* ======= intro contact button ======= */
+
+
+.detail-btn {
+  padding: 20px 30px;
+  margin: 0;
+  position: relative;
+  border-radius: 3rem;
+  background: var(--FirstColor);
+  outline: none;
+  border: none;
+  transition: background 1.5s ease-in-out;
+}
+.detail-btn:hover {
+  background: var(--buttonColor);
+}
+.detail-link {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  color: var(--secondColor);
+  font-weight: 600;
+}
+
+
+/* ===== back to the top button ======*/
 
 
 #myBtn {
@@ -286,7 +431,7 @@ details-content {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: var(--first); /* Set a background color */
+  background-color: var(--FirstColor); /* Set a background color */
   color: var(--buttonColor); /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 8px 15px; /* Some padding */
@@ -363,6 +508,12 @@ details-content {
     width:100vw;
     height: max-content;
     padding: 10px 0;
+  }
+  .my-button-container {
+    width:100%;
+  }
+  .prof-text-wrapper {
+    width:100%;
   }
 
 }

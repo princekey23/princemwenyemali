@@ -5,6 +5,7 @@
     --secondColor: black;
     --buttonColor:#5312BE;
     --clear: rgba(0,0,0,.5);
+    --clear2: rgba(255,255,255,.5);
     --redish:#FC7061;
 }
 
@@ -110,7 +111,7 @@ main {
 
 /* ========= introduction ========= */
 
-#intro, #apro {
+#intro, #apro, #loisir, #cv {
   width:90%;
   min-height: 60vh;
   margin: 0 auto;
@@ -324,8 +325,8 @@ main {
 .card:hover > .serv-details{
   position:absolute;
   display: block;
-  top: 70%;
-  transform: translateY(-70%);
+  top: 81%;
+  transform: translateY(-81%);
   left: 20px;
 }
 .d-text {
@@ -352,6 +353,102 @@ main {
 .card-link:hover i {
   transform: rotate(360deg);
 }
+
+
+
+/* ======= loisir section ======== */
+#loisir {
+  background: var(--FirstColor);
+  border-radius: 5px;
+  padding: 20px 0;
+}
+#loisir .heading {
+  color: var(--clear);
+  cursor: pointer;
+}
+#loisir .heading i {
+  transition: color 1s ease-in-out;
+}
+#loisir .heading:hover  i{
+  color: var(--secondColor);
+}
+.loisir-container {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px;
+}
+.loisir-mages {
+  width: 100%;
+  margin:0;
+  padding: 5px 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.loimage-cont {
+  width: 100%;
+  padding:0;
+  margin:0;
+  border-radius: 3px;
+  position: relative;
+}
+.loimage {
+  width: 100%;
+  padding:0;
+  margin:0;
+  border-radius: 3px;
+  position: relative;
+  object-fit: cover;
+}
+.p-container {
+  margin:0;
+  padding:0;
+  position: relative;
+}
+.loisir-text {
+  color: var(--clear);
+  opacity: .9;
+}
+.loisir-small {
+  opacity: .7;
+  margin: 0;
+  position: relative;
+}
+.loisir-btn {
+   padding: 5px;
+   position: relative;
+   color: var(--secondColor);
+   margin:0;
+   text-transform: capitalize;
+   transition: color 1s ease-in-out;
+}
+.loisir-btn i {
+  transition: transform 1s ease-in-out;
+}
+.loisir-btn:hover {
+  color: var(--clear);
+}
+.loisir-btn:hover i {
+  transform: translateX(10px);
+}
+
+
+/* ========== CV section ======== */
+
+
+
+#cv {
+  background: var(--secondColor);
+}
+#cv .heading {
+  color: var(--FirstColor);
+  position: relative;
+}
+
 
 
 
